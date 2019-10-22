@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+.cabecalho {
+    flex-grow: 1;
+    background-color: #e6e6e6;
+    display: flex;
+    padding: .5em;
+}
+
+.cabecalho h3 {
+    font-weight: 500;
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+}
+
+.plataforma {
+    position: fixed;
+    background-color: #2d8657;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 5;
+    height: calc(100% - 50px);
+    width: 100%;
+}
+
+
+.tabuleiro {
+    flex-grow: 3;
+    padding: 1em;
+}
+
+.area-botao {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 3px solid #FFF;
+}
+
+.area-botao__action {
+    padding: .5em;
+    font-size: 1em;
+    border-radius: 5px;
+    box-shadow: none;
+    cursor: pointer;
+    border: transparent;
+}
+
+.area-botao__action:hover {
+    transition: 400ms;
+    color: #fff;
+    box-shadow: 2px 2px 0px 1px #333131;
+}
+
+.area-botao__action.primary:hover {
+    background-color: #15bd0ef5;
+}
+
+.area-botao__action.seccondary:hover {
+    background-color: #1f42d6f5;
+}
+
+.robo {
+    width: 45px;
+    height: 45px;
+    border-radius: 45px;
+    border: solid #fff;
+    background-color: #ea2f3b;
+}
