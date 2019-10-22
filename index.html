@@ -4,22 +4,28 @@
     <meta charset="utf-8"> <!-- define tipo de caractere utf8 -->
     <meta charset="utf-10"> <!-- define tipo de caractere utf10 -->
     <link rel="stylesheet" href="./style.css"> <!-- linka folha de estilos principal -->
+    <script type="text/javascript" src="./functions.js"></script> <!-- link do js principal -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 </head>
 
 <body>
     <div class="cabecalho">
-        <h3>Vinícius</h3>
+        <!--<h3>Vinícius</h3> -->
     </div>
     <div class="plataforma">
-        <div class="tabuleiro">
-            <div class="robo"></div>
+        <div class="tabuleiro" id="tabuleiro">
+            <div id="tabuleiro__table"></div>
         </div>
         <div class="area-botao">
+            <button onclick="Iniciar(25)" class="area-botao__action primary">Iniciar corrida</button>
             <button class="area-botao__action primary">Inverter sentido</button>
             <button class="area-botao__action seccondary">Gerar novo tabuleiro</button>
         </div>
     </div>
 </body>
+
+<script>
+    document.body.onload = gerarPecas;
+</script>
 
 </html>
